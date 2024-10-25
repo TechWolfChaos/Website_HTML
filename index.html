@@ -1,46 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Virginia</title>
-    <link rel="stylesheet" href="./pageStyles/mainStyle.css">
+    <title>Virginia</title>
+    <link rel="stylesheet" href="/pageStyles/homePage.css">
 </head>
-
 <body>
-    <header>
-        <div class="mainLogo"></div>
-        <h1>
-            <u>Welcome to Virginia</u><br>"The state for lovers!"
-        </h1>
-        <nav>
-            <a href="index.html">Home</a>
-            |
-            <a href="pages/richmond.html">Richmond</a>
-            |
-            <a href="pages/norfolk.html">Norfolk</a>
-            |
-            <a href="pages/moneta.html">Moneta</a>
-            |
-            <a href="pages/richmond.html">Contact</a>
-        </nav>
-        <div class="mainLogo2"></div>
+    <header class="mainHeader">
+        <div class="columnOne">
+            <div class="mainLogo"></div>
+        </div>
+        <div class="columnTwo">
+            <h1>
+                <u>Welcome to Virginia!</u><br>"The state for lovers!"
+            </h1>
+            <nav id="navMenu">
+                <ul>
+                    <li><a class="menuItem" href="/index.html">| Home |</a></li>
+                    <li><a class="menuItem" href="/pages/moneta.html">| Moneta |</a></li>
+                    <li><a class="menuItem" href="/pages/norfolk.html">| Norfolk |</a></li>
+                    <li><a class="menuItem" href="/pages/richmond.html">| Richmond |</a></li>
+                    <li><a class="menuItem" href="/pages/contact.html">| Contact |</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="columnThree">
+            <div class="mainLogo2"></div>
+        </div>
     </header>
-
+    <br>
+    <br>
+    <br>
     <main>
-        <a target="_blank" href="https://www.andrewrhodesphoto.com/Portfolio/Nothern-Virginia">
-            <div class="mainPic1"></div>
-        </a>
-        <p>
-            <u>Facts about Virginia</u>
-        </p>
-        <a target="_blank" href="https://depositphotos.com/photos/virginia-landscape.html">
-            <div class="mainPic2"></div>
-        </a>
+        <section class="infoSection">
+            <div class="infoColumnOne">
+                <div class="richmondPic1"></div>
+            </div>
+            <div class="infoColumnTwo">
+                <h2><u>Facts about Virginia</u></h2>
+                <br>
+                <ul>
+                    <li>Fact 1</li>
+                    <li>Fact 1</li>
+                    <li>Fact 1</li>
+                    <li>Fact 1</li>
+                </ul>
+            </div>
+            <div class="infoColumnThree">
+                <div class="richmondPic2">
+                    <table>
+                        <tr>
+                            <th>City's Population:</th>
+                            <th>Info</th>
+                        </tr>
+                        <tr>
+                            <th>Incorporated Year:</th>
+                            <th>Info</th>
+                        </tr>
+                        <tr>
+                            <th>Region:</th>
+                            <th>Info</th>
+                        </tr>
+                        <tr>
+                            <th>City class:</th>
+                            <th>Info</th>
+                        </tr>
+                        <tr>
+                            <th>Avg. Income level:</th>
+                            <th>Info</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <footer>ref</footer>
+    <footer>
+        <a target="_blank" href="https://www.andrewrhodesphoto.com/Portfolio/Nothern-Virginia">
+            <div>Pic 1</div>
+        </a>
+        <a target="_blank" href="https://depositphotos.com/photos/virginia-landscape.html">
+            <div>Pic 2</div>
+        </a>
+    </footer>
 </body>
-
 </html>
