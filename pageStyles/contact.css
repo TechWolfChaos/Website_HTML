@@ -90,76 +90,53 @@ body {
     background-position: right;
 }
 
-.infoSection {
+main {
     display: flex;
-    justify-content: space-evenly;
-    height: 60vh;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.infoColumnOne {
-    padding: 0px;
-    height: 60vh;
-    width: 25%;
-}
-
-.richmondPic1 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/Shenandoah-National-Park-Sunrise-Fog-Blue-Ridge-Mountains-XL.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.infoColumnTwo {
-    height: 60vh;
-    width: 30%;
-    background-color: #FF9060;
-}
-
-.infoColumnTwo h2 {
-    text-align: center;
-    padding: 20px;
+h2 {
     font-size: 30px;
 }
 
-.infoColumnTwo ul {
-    padding-left: 50px;
-    font-size: 20px;
-}
-
-.infoColumnThree {
-    height: 60vh;
-    width: 25%;
-}
-
-.richmondPic2 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/Shenandoah-National-Park-Sunrise-Fog-Blue-Ridge-Mountains-XL.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    align-content: end;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-}
-
-th,td {
-    border: 1px solid black;
-    padding: 5px;
-    text-align: center;
-    width: 50%;
-    font-size: 20px;
-}
-
-th {
+form {
     background-color: #FF9060;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    width: 40%;
+    border: 1px solid black;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 98%;
+}
+
+input[type="submit"]{
+    background-color: #80A7E6;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: aqua;
 }
 
 footer {

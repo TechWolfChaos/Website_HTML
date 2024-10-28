@@ -106,7 +106,7 @@ body {
 .richmondPic1 {
     width: 100%;
     height: 100%;
-    background-image: url(../images/Shenandoah-National-Park-Sunrise-Fog-Blue-Ridge-Mountains-XL.jpg);
+    background-image: url(../images/Richmond\ Main.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -129,6 +129,10 @@ body {
     font-size: 20px;
 }
 
+.infoColumnTwo li {
+    font-size: 25px;
+}
+
 .infoColumnThree {
     height: 60vh;
     width: 25%;
@@ -137,7 +141,7 @@ body {
 .richmondPic2 {
     width: 100%;
     height: 100%;
-    background-image: url(../images/Shenandoah-National-Park-Sunrise-Fog-Blue-Ridge-Mountains-XL.jpg);
+    background-image: url(../images/Richmond\ 2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -163,5 +167,13 @@ th {
 }
 
 footer {
+    font-size: 25px;
     text-align: center;
+}
+
+.urlsInfo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 15px;
 }

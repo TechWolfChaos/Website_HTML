@@ -13,7 +13,7 @@
         </div>
         <div class="columnTwo">
             <h1>
-                <u>Contact</u><br>If you see a problem or have more questions
+                <u>Contact Us</u>
             </h1>
             <nav id="navMenu">
                 <ul>
@@ -33,48 +33,23 @@
     <br>
     <br>
     <main>
-        <section class="infoSection">
-            <div class="infoColumnOne">
-                <div class="richmondPic1"></div>
-            </div>
-            <div class="infoColumnTwo">
-                <h2><u>Facts about Richmond</u></h2>
-                <br>
-                <ul>
-                    <li>Fact 1</li>
-                    <li>Fact 1</li>
-                    <li>Fact 1</li>
-                    <li>Fact 1</li>
-                </ul>
-            </div>
-            <div class="infoColumnThree">
-                <div class="richmondPic2">
-                    <table>
-                        <tr>
-                            <th>City's Population:</th>
-                            <th>Info</th>
-                        </tr>
-                        <tr>
-                            <th>Incorporated Year:</th>
-                            <th>Info</th>
-                        </tr>
-                        <tr>
-                            <th>Region:</th>
-                            <th>Info</th>
-                        </tr>
-                        <tr>
-                            <th>City class:</th>
-                            <th>Info</th>
-                        </tr>
-                        <tr>
-                            <th>Avg. Income level:</th>
-                            <th>Info</th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
+        <h2>Contact Us</h2>
+        <br>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="email">Confirm Email:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" required>
+
+            <input type="submit" value="Send Message">
+        </form>
     </main>
-    <footer>ref</footer>
 </body>
 </html>
