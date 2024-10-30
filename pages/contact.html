@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <!-- Setting the style sheet for the page -->
     <link rel="stylesheet" href="/pageStyles/contact.css">
 </head>
 <body>
+    <!-- Header of the page -->
     <header class="mainHeader">
+        <!-- Left side section of the header page which adds the picture/logo -->
         <section class="columnOne">
             <div class="mainLogo"></div>
         </section>
+        <!-- Middle section of the header page -->
         <section class="columnTwo">
             <h1>
                 <img src="/images/HaveQuestions.jpg" alt="contactUs" style="width: 100px; height: 100px;">
                 <u id="mainTitle">Have questions?<br>Contact Us</u>
                 <img src="/images/customerSupport.jpg" alt="ContactUs" style="width: 100px; height: 100px;">
             </h1>
+            <!-- Menu section of the page with links to the other pages using an unorganized list -->
             <nav id="navMenu">
                 <ul>
                     <li><a class="menuItem" href="/index.html">| Home |</a></li>
@@ -27,6 +32,7 @@
                 </ul>
             </nav>
         </section>
+        <!-- Right side section of the header page which adds the second picture/logo -->
         <section class="columnThree">
             <div class="mainLogo2"></div>
         </section>
@@ -34,9 +40,11 @@
     <br>
     <br>
     <br>
+    <!-- Main information section of the page with the form-->
     <main>
         <h2>Please fill out form below</h2>
         <br>
+        <!-- Creating of the form in the page -->
         <form id="ContactUsForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" maxlength="25" required>
@@ -54,15 +62,18 @@
         </form>
     </main>
 </body>
+<!-- Adding the JavaScript for the Submit button on the form -->
 <script>
     document.getElementById("ContactUsForm").addEventListener("submit", function(event) {
         event.preventDefault();
 
+        // creating the variables for the data to be pulled from
         const name = document.getElementById("name").value;
         const message = document.getElementById("message").value;
         const email = document.getElementById("email").value;
         const confirmEmail = document.getElementById("confirmEmail").value;
 
+        // creating an if/else statement to check for matching email addresses
         if(email !== confirmEmail){
             alert(name + ": your submitted emails do not match, please insure they are the same before sending.");
             this.reset();
