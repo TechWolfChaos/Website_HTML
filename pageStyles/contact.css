@@ -1,24 +1,29 @@
+/* To clear any leftover site settings before loading page settings */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* To set the main color of the page */
 body {
     width: auto;
     background-color: #80A7E6;
 }
 
+/* To set the color of the nav and header location */
 .mainHeader {
     background-color: #FF9060;
     display: flex;
 }
 
+/* settings for the first column on the left */
 .columnOne {
     padding: 0px;
     width: 25%;
     height: 200px;
 }
 
+/* settings to aligning/show the picture/logo in columnOne */
 .mainLogo {
     width: auto;
     height: 200px;
@@ -29,23 +34,48 @@ body {
     justify-content: left;
 }
 
+/* settings for the second column in the center and using relative positioning */
 .columnTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 50%;
-    align-content: end;
+    position: relative;
 }
 
-.columnTwo h1 {
-    text-align: center;
-    font-size: 40px;
+/* settings for the heading with images and text, setup for a float layout */
+h1 {
     padding-bottom: 40px;
+    overflow: auto;
 }
 
+/* settings for the two images with a float setting in order to allow them to show correctly */
+img {
+    border-radius: 25px;
+    float: left;
+}
+
+/* settings for the page title with font size and style along with setting float property in order to show correctly with the images */
+#mainTitle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+/* settings for the navigation menu section and using absolute positioning to move into right location*/
 #navMenu {
     background: #FF9060;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 165px;
 }
 
+/* settings for the navigation menu on how to display */
 #navMenu ul {
     list-style-type: none;
     margin: 0px;
@@ -58,6 +88,7 @@ body {
     gap: 20px;
 }
 
+/* settings for the navigation menu for each option */
 .menuItem {
     transition: 0.3s ease;
     background: #FF9060;
@@ -71,16 +102,19 @@ body {
     text-decoration: none;
 }
 
+/* settings for the navigation menu for when the mouse hovers over the menu options */
 .menuItem:hover {
     color: white;
 }
 
+/* settings for the third column on the right */
 .columnThree {
     padding: 0px;
     width: 25%;
     height: auto;
 }
 
+/* settings to aligning/show the picture/logo in columnThree */
 .mainLogo2 {
     width: auto;
     height: 200px;
@@ -90,6 +124,7 @@ body {
     background-position: right;
 }
 
+/* settings for the main form location and display for the text and form */
 main {
     display: flex;
     justify-content: center;
@@ -97,26 +132,32 @@ main {
     flex-direction: column;
 }
 
+/* setting text font and size above the form */
 h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
 }
 
+/* settings for the form box, making it look like a form */
 form {
     background-color: #FF9060;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
     width: 40%;
     border: 1px solid black;
 }
 
+/* settings for the form labels, text font, location, and display type */
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* settings for the input text fields */
 input[type="text"], input[type="email"], textarea {
     border: 1px solid black;
     border-radius: 6px;
@@ -125,7 +166,10 @@ input[type="text"], input[type="email"], textarea {
     width: 98%;
 }
 
+/* settings for the submit button, also using relative positioning to center the button on the form */
 input[type="submit"]{
+    position: relative;
+    left: 40%;
     background-color: #80A7E6;
     color: black;
     border: none;
@@ -135,10 +179,7 @@ input[type="submit"]{
     font-size: 20px;
 }
 
+/* settings for the submit button for when mouse hovers over */
 input[type="submit"]:hover {
-    background-color: aqua;
-}
-
-footer {
-    text-align: center;
+    background-color: lightgreen;
 }
