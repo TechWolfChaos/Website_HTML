@@ -37,21 +37,39 @@
     <main>
         <h2>Please fill out form below</h2>
         <br>
-        <form action="submit.php" method="post">
+        <form id="ContactUsForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" maxlength="25" required>
 
             <label for="message">Message:</label>
             <textarea name="message" id="message" rows="4" required></textarea>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" maxlength="25" required>
 
             <label for="email">Confirm Email:</label>
-            <input type="email" id="confirmEmail" name="confirmEmail" required>
+            <input type="email" id="confirmEmail" name="confirmEmail" maxlength="25" required>
 
-            <input type="submit" value="Send Message">
+            <button type="submit">Send Message</button>
         </form>
     </main>
 </body>
+<script>
+    document.getElementById("ContactUsForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const message = document.getElementById("message").value;
+        const email = document.getElementById("email").value;
+        const confirmEmail = document.getElementById("confirmEmail").value;
+
+        if(email !== confirmEmail){
+            alert(name + ": your submitted emails do not match, please insure they are the same before sending.");
+            this.reset();
+        } else {
+            alert("Form submitted successfully! " + name + "\n\nBelow is what you submitted:\n\nName: " + name + "\nEmail: " + email + "\nMassage:\n" + message);
+            this.reset();
+        }
+    });
+</script>
 </html>

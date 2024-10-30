@@ -161,13 +161,15 @@ label {
 input[type="text"], input[type="email"], textarea {
     border: 1px solid black;
     border-radius: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     margin-bottom: 15px;
     padding: 10px;
     width: 98%;
 }
 
 /* settings for the submit button, also using relative positioning to center the button on the form */
-input[type="submit"]{
+button{
     position: relative;
     left: 40%;
     background-color: #80A7E6;
@@ -179,7 +181,7 @@ input[type="submit"]{
     font-size: 20px;
 }
 
-/* settings for the submit button for when mouse hovers over */
-input[type="submit"]:hover {
+/* settings for the submit button for when mouse hovers over  */
+button:hover {
     background-color: lightgreen;
 }
