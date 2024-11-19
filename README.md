@@ -1,2 +1,2 @@
-# ClassProjecty_Website_HTML
-College Class Project written in HTML
+# Website_HTML
+Project written in HTML with CSS
